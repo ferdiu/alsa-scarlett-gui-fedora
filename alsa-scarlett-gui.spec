@@ -3,7 +3,7 @@ Version:        0.5.1
 Release:        1%{?dist}
 Summary:        Gtk4 GUI for ALSA controls on Focusrite Scarlett/Clarett/Vocaster interfaces
 
-License:        GPL-3.0-or-later
+License:        GPLv3+ LGPLv3+
 URL:            https://github.com/geoffreybennett/alsa-scarlett-gui
 Source0:        %{url}/archive/%{version}/%{name}-%{version}.tar.gz
 
@@ -69,6 +69,7 @@ desktop-file-validate %{buildroot}%{_datadir}/applications/vu.b4.alsa-scarlett-g
 
 %files
 %license LICENSES/GPL-3.0-or-later.txt
+%license LICENSES/LGPL-3.0-or-later.txt
 %doc README.md FAQ.md
 %doc docs/INSTALL.md docs/USAGE.md
 %doc docs/iface-*.md
