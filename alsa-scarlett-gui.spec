@@ -13,7 +13,6 @@ BuildRequires:  pkgconfig(alsa)
 BuildRequires:  pkgconfig(gtk4)
 BuildRequires:  pkgconfig(openssl)
 BuildRequires:  desktop-file-utils
-BuildRequires:  libappstream-glib
 
 Requires:       gtk4
 Requires:       hicolor-icon-theme
@@ -55,21 +54,17 @@ Supported devices include:
 # Build in src directory as per upstream instructions
 cd src
 %set_build_flags
-%make_build VERSION=%{version}
+%make_build VERSION=%{version} PREFIX=%{_prefix}
 
 
 %install
 cd src
 %make_install \
-    PREFIX=%{_prefix} \
-    BINDIR=%{_bindir} \
-    DATADIR=%{_datadir} \
-    MANDIR=%{_mandir}
+    PREFIX=%{_prefix}
 
 
 %check
 desktop-file-validate %{buildroot}%{_datadir}/applications/vu.b4.alsa-scarlett-gui.desktop
-appstream-util validate-relax --nonet %{buildroot}%{_metainfodir}/vu.b4.alsa-scarlett-gui.metainfo.xml
 
 
 %files
@@ -79,9 +74,7 @@ appstream-util validate-relax --nonet %{buildroot}%{_metainfodir}/vu.b4.alsa-sca
 %doc docs/iface-*.md
 %{_bindir}/alsa-scarlett-gui
 %{_datadir}/applications/vu.b4.alsa-scarlett-gui.desktop
-%{_datadir}/icons/hicolor/scalable/apps/vu.b4.alsa-scarlett-gui.svg
-%{_metainfodir}/vu.b4.alsa-scarlett-gui.metainfo.xml
-%{_mandir}/man1/alsa-scarlett-gui.1*
+%{_datadir}/icons/hicolor/*/apps/vu.b4.alsa-scarlett-gui.*
 
 
 %changelog
