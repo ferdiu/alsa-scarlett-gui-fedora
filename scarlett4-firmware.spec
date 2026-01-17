@@ -9,6 +9,7 @@ URL:            https://github.com/geoffreybennett/scarlett4-firmware
 Source0:        %{url}/archive/%{version}/%{name}-%{version}.tar.gz
 
 BuildArch:      noarch
+BuildRequires:  make
 
 # Required by fcp-support package
 Enhances:       fcp-support

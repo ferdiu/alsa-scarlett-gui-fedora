@@ -9,6 +9,7 @@ URL:            https://github.com/geoffreybennett/scarlett2-firmware
 Source0:        %{url}/archive/%{version}/%{name}-%{version}.tar.gz
 
 BuildArch:      noarch
+BuildRequires:  make
 
 # Required by alsa-scarlett-gui for firmware updates
 Enhances:       alsa-scarlett-gui
