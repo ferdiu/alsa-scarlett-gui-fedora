@@ -1,5 +1,5 @@
 Name:           scarlett4-firmware
-Version:        2403
+Version:        1.0
 Release:        1%{?dist}
 Summary:        Firmware files for Focusrite Scarlett 4th Gen large interfaces
 
@@ -45,5 +45,8 @@ for firmware updates on these devices.
 
 
 %changelog
+* Mon Jan 26 2026 Federico Manzella <ferdiu.manzella@gmail.com> - 1.0-1
+- Packaged for release 1.0
+
 * Sat Jan 17 2026 Federico Manzella <ferdiu.manzella@gmail.com> - 2403-1
 - First package for version 2403
