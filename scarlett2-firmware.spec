@@ -1,5 +1,5 @@
 Name:           scarlett2-firmware
-Version:        1.0
+Version:        1.1
 Release:        1%{?dist}
 Summary:        Firmware files for Focusrite Scarlett 2nd/3rd/4th Gen and Clarett USB interfaces
 
@@ -47,6 +47,9 @@ on Linux systems.
 
 
 %changelog
+* Sun Apr 26 2026 Federico Manzella <ferdiu.manzella@gmail.com> - 1.1-1
+- Packaged for release 1.1
+
 * Mon Jan 26 2026 Federico Manzella <ferdiu.manzella@gmail.com> - 1.0-1
 - Packaged for release 1.0
 
