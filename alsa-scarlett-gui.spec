@@ -1,6 +1,6 @@
 Name:           alsa-scarlett-gui
 Version:        0.5.1
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Gtk4 GUI for ALSA controls on Focusrite Scarlett/Clarett/Vocaster interfaces
 
 License:        GPLv3+ LGPLv3+
@@ -81,5 +81,8 @@ desktop-file-validate %{buildroot}%{_datadir}/applications/vu.b4.alsa-scarlett-g
 
 
 %changelog
+* Thu May 7 2026 Federico Manzella <ferdiu.manzella@gmail.com> - 0.5.1-2
+- Patch to build on Fedora 44 (new more pedantic gcc version)
+
 * Sat Jan 17 2026 Federico Manzella <ferdiu.manzella@gmail.com> - 0.5.1-1
 - First package for version 0.5.1
