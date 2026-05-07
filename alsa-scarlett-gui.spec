@@ -7,7 +7,7 @@ License:        GPLv3+ LGPLv3+
 URL:            https://github.com/geoffreybennett/alsa-scarlett-gui
 Source0:        %{url}/archive/%{version}/%{name}-%{version}.tar.gz
 # TODO: remove this once merged (if so)
-Source1:        https://patch-diff.githubusercontent.com/raw/geoffreybennett/alsa-scarlett-gui/pull/244.patch
+Patch0:         https://patch-diff.githubusercontent.com/raw/geoffreybennett/alsa-scarlett-gui/pull/244.patch
 
 BuildRequires:  gcc
 BuildRequires:  make
